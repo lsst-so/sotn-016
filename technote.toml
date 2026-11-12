@@ -1,0 +1,23 @@
+[technote]
+id = "SOTN-016"
+series_id = "SOTN"
+canonical_url = "https://sotn-016.lsst.io"
+github_url = "https://github.com/lsst-so/sotn-016"
+github_default_branch = "main"
+date_created = 2026-11-12T09:33:57Z
+organization.name = "NSF-DOE Vera C. Rubin Observatory"
+organization.ror = "https://ror.org/048g3cy84"
+license.id = "CC-BY-4.0"
+
+[technote.status]
+state = "draft"
+
+[[technote.authors]]
+name.given = "Ignacio"
+name.family = "Sevilla-Noarbe"
+internal_id = "sevillai"
+orcid = "https://orcid.org/0000-0002-1831-1953"
+[[technote.authors.affiliations]]
+name = "Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas"
+internal_id = "CIEMAT"
+address = "Madrid"
