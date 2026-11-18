@@ -21,17 +21,14 @@ INCLINOMETER_FIELD = "inclinometerAngle"
 
 Residuals are computed for every measurement on the M1M3 inclinometer (used as reference), by taking the closest measurement from `MTMount.elevation` (with a 1s tolerance). Outliers are flagged for 5-sigma deviations after correcting for median biases (there is actually a bias of a few tenths of degrees, which probably is not important for these purposes of LUT look-up). In the following example plots, 5-sigma outliers are marked in red. Figure 1 shows a typical large outlier case from October 29 2026.
 
-<!-- ![typical_outlier](residuals_20261029.png) -->
+![Residuals between MTMount.elevation and the M1M3 inclinometer on 2026-10-29, with 5-sigma outliers in red.](residuals_20261029.png)
 
-<figure>
-  <img src="residuals_20261029.png" alt="typical">
-  <figcaption>Figure 1: Typical outlier.</figcaption>
-</figure>
+*Figure 1: Typical outlier.*
 
-<figure>
-  <img src="outlier_zoom_chronograph.png" alt="typical">
-  <figcaption>Figure 2: Zoomed in version. Blue line corresponds to inclinometer data, whereas the TMA elevation measurement appears to zero out for several seconds before coming back to the M1M3 measurement. </figcaption>
-</figure>
+![Zoomed in version](outlier_zoom_chronograph.png)
+
+*Figure 2: Zoomed in version. Blue line corresponds to inclinometer data, whereas the TMA elevation measurement appears to zero out for several seconds before coming back to the M1M3 measurement*
+
 
 In other examples where the outlier cluster goes on for an extended period, usually an event related to the TMA is happening. For May 11th 2026 for instance there was an azimuth encoder error that led to software deployment and subsequent issues following a TMA interlock. April 23rd saw a problem with the TMA PXI control system. In June 12 the night report logs "MTMount went to FAULT during the day due to a disconnection issue." and so on with other dates where the residuals are really large.
 
