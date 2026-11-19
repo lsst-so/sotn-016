@@ -1,7 +1,7 @@
 # Analysis of robustness of TMA elevation reading
 
 ```{abstract}
-We study the consistency of TMA elevation and M1M3 cell inclinometer readings. There are several controlled occasions in which these values differ. On those cases during observing blocks in which an outlier is detected for a few seconds, no applied force excess is detected in the telemetry, probably because the inclinometer data was being used as default at the time. Therefore though MTMount.elevation is not 100% reliable, a very large fraction of the time it can be used as backup.
+We study the consistency of TMA elevation and M1M3 cell inclinometer readings, to understand the viability of TMA elevation telemetry as a backup reference value for LUT use (M1M3 inclinometer has been the default reference). We find several occasions (a few tens) from January 2024 to October 2026 in which these values differ. A few of them track back to TMA interventions, but most are random instances where the TMA elevation reading goes to zero for a few seconds. Though MTMount.elevation is not 100% reliable according to this, a very large fraction of the time it can be used as backup.
 ```
 
 ## Introduction
@@ -36,7 +36,7 @@ The collection of plots and summary csv files are provided within tar files incl
 
 ## Conclusions
 
-This overview of the differences between the M1M3 cell inclinometer reading and MTMount.elevation telemetry, in general indicate a good consistency between both, assuming that a few tenths of degree bias is tolerable. There are occasions in which both quantities disagree during extended periods, but we invariably track those back to interventions in TMA system. The instantaneous outliers observed in several nights (most of the cases) at least for the two most recent cases (July 14th and October 29th) do not result in an immediate large response in M1M3 applied forces, probably M1M3 was being used as reference instead. Therefore at first sight, despite not being an accurate tracking measurement of the TMA elevation angle due to these occasional faults, the result shows it is consistent within a few tenths of degree with the M1M3 telemetry and could be used as backup.
+This overview of the differences between the M1M3 cell inclinometer reading and MTMount.elevation telemetry, in general indicate a good consistency between both, assuming that a few tenths of degree bias is tolerable. There are occasions in which both quantities disagree during extended periods, but we invariably track those back to interventions in TMA system. The instantaneous outliers observed in several nights (most of the cases) at least for the two most recent cases (July 14th and October 29th) usually are only a few seconds in duration. Therefore at first sight, despite not being an accurate tracking measurement of the TMA elevation angle due to these occasional faults, the result shows it is consistent within a few tenths of degree with the M1M3 telemetry and could be used as backup.
 
 ## Related Documentation
 
